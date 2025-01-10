@@ -40,7 +40,12 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-center md:justify-between">
-        <div className="font-bold text-2xl">JB</div>
+        <Link
+          href="/"
+          className="font-bold text-2xl hover:text-primary transition-colors"
+        >
+          <div className="font-bold text-2xl">JB</div>
+        </Link>
         <div className="hidden md:flex space-x-8 ">
           <Link
             href="#why-fastory"

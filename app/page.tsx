@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen ">
       <Navbar />
       {/* Hero Section */}
       <div className="relative h-screen">
@@ -157,7 +157,10 @@ export default function Home() {
         </div>
       </section>
       {/* About Section */}
-      <section id="about" className="py-20 bg-background">
+      <section
+        id="about"
+        className="py-20 bg-background  flex justify-center items-center  w-screen"
+      >
         <div className="container mx-auto px-6">
           <motion.div
             ref={ref}
@@ -207,8 +210,11 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-20 bg-muted">
-        <div className="container mx-auto px-6">
+      <section
+        id="experience"
+        className="py-20 bg-muted  flex justify-center items-center  w-screen"
+      >
+        <div className="container px-6">
           <motion.div
             ref={ref}
             initial="hidden"
@@ -477,6 +483,88 @@ export default function Home() {
                     className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
                   >
                     Voir le projet <Code2 className="ml-2 w-4 h-4" />
+                  </a>
+                </div>
+              </motion.div>
+              <motion.div
+                whileHover={{ y: -5 }}
+                className="bg-card rounded-lg overflow-hidden shadow-lg"
+              >
+                <div
+                  className="h-48 bg-cover bg-center"
+                  style={{
+                    backgroundImage: "url('/PokeTCGPActu.png')",
+                  }}
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold mb-3">
+                    Poke TCGP Actu
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Une plateforme créée pour un streamer Twitch passionné par
+                    le jeu mobile Pokémon TCG Pocket.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      Next.js
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      React
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      ShadCN
+                    </span>
+                  </div>
+                  <a
+                    href="https://poke-tcgp-actu.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
+                  >
+                    Voir le projet <Code2 className="ml-2 w-4 h-4" />
+                  </a>
+                </div>
+              </motion.div>
+              <motion.div
+                whileHover={{ y: -5 }}
+                className="bg-card rounded-lg overflow-hidden shadow-lg"
+              >
+                <div
+                  className="h-48 bg-cover bg-start"
+                  style={{
+                    backgroundImage: "url('/PortfolioPreview.png')",
+                  }}
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold mb-3">Mon Portfolio</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Explorez mon portfolio, un espace coloré et dynamique conçu
+                    avec React , ThreeJS et Tailwind CSS. Une présentation
+                    amusante de mes compétences et projets, le tout dans un
+                    design qui donne le sourire ! A découvrir de préférence sur
+                    ordinateur.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      React
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      Tailwind CSS
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      JavaScript
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      Three JS
+                    </span>
+                  </div>
+                  <a
+                    href="https://jonathan-bensadoun.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
+                  >
+                    Voir le portfolio <Code2 className="ml-2 w-4 h-4" />
                   </a>
                 </div>
               </motion.div>
