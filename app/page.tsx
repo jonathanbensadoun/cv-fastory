@@ -126,7 +126,7 @@ export default function Home() {
               vision du développement web. Grâce à mon expertise dans des
               technologies comme React, Redux, Next.js, TypeScript, et Node.js,
               je suis prêt à relever les défis techniques ambitieux de votre
-              plateforme 🌟 Fanzone et à contribuer à créer des expériences
+              plateforme Fanzone et à contribuer à créer des expériences
               captivantes pour les utilisateurs.
             </p>
             <p className="text-lg mb-6">
