@@ -35,10 +35,18 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative h-screen">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')",
+            backgroundImage: "url('/bg_avatar.jpeg')",
+            backgroundBlendMode: "overlay",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat block md:hidden"
+          style={{
+            backgroundImage: "url('/bg_avatar_mobile.jpeg')",
             backgroundBlendMode: "overlay",
           }}
         >
@@ -46,8 +54,8 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 h-[calc(100vh-80px)] flex items-center">
-          <div className="container mx-auto px-6">
+        <div className="relative  z-10 h-[calc(100vh-280px)] flex items-center justify-end">
+          <div className="ml-auto mr-auto md:mr-40 px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -68,7 +76,7 @@ export default function Home() {
               <div className="flex space-x-4">
                 <Link
                   href="#contact"
-                  className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+                  className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors "
                 >
                   Me contacter
                 </Link>
@@ -83,7 +91,57 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      {/* Why I Would Be an Asset for Fastory Section */}
+      <section id="why-fastory" className="py-20 bg-muted">
+        <div className="container mx-auto px-6">
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={fadeIn}
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-4xl font-bold mb-8">
+              Pourquoi je serais un atout pour Fastory ?
+            </h2>
+            <p className="text-lg mb-6">
+              Fastory incarne l&apos;innovation, la créativité et
+              l&apos;engagement, des valeurs qui résonnent parfaitement avec ma
+              vision du développement web. Grâce à mon expertise dans des
+              technologies comme React, Redux, Next.js, TypeScript, et Node.js,
+              je suis prêt à relever les défis techniques ambitieux de votre
+              plateforme 🌟 Fanzone et à contribuer à créer des expériences
+              captivantes pour les utilisateurs.
+            </p>
+            <p className="text-lg mb-6">
+              Lors de mon projet de fin de formation, j&apos;ai eu
+              l&apos;occasion d&apos;utiliser Phaser pour développer un jeu
+              interactif, ce qui m&apos;a permis de comprendre les défis et les
+              opportunités liés au développement de mécaniques de jeu
+              immersives. Mon expérience dans le développement
+              d&apos;applications performantes et scalables inclut également
+              l&apos;utilisation d&apos;outils modernes tels que ShadCN,
+              TailwindCSS, et PostgreSQL.
+            </p>
+            <p className="text-lg mb-6">
+              Ce qui me distingue, c&apos;est ma passion pour l&apos;innovation
+              et ma capacité à m&apos;adapter rapidement à de nouvelles
+              technologies comme celles utilisées pour vos jeux Nextgen, tels
+              que PixiJS ou Unity. Mon objectif est de transformer des idées
+              ambitieuses en solutions concrètes, tout en apportant une énergie
+              positive et une approche collaborative au sein d&apos;une équipe.
+            </p>
+            <p className="text-lg">
+              Rejoindre Fastory serait une opportunité de mettre mes compétences
+              et ma créativité au service d&apos;un projet à fort impact, tout
+              en continuant à grandir professionnellement dans un environnement
+              stimulant et orienté vers l&apos;avenir.
+            </p>
+          </motion.div>
+        </div>
+      </section>
       {/* About Section */}
       <section id="about" className="py-20 bg-background">
         <div className="container mx-auto px-6">
@@ -93,6 +151,8 @@ export default function Home() {
             animate={controls}
             variants={fadeIn}
             className="max-w-4xl mx-auto"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
           >
             <h2 className="text-4xl font-bold mb-8">À propos</h2>
             <div className="grid md:grid-cols-2 gap-12">
@@ -140,6 +200,8 @@ export default function Home() {
             initial="hidden"
             animate={controls}
             variants={fadeIn}
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
           >
             <h2 className="text-4xl font-bold mb-12">Expérience</h2>
             <div className="space-y-12">
@@ -147,7 +209,7 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-4">
                   Développeur Web | Yuli & Friends
                 </h3>
-                <p className="text-muted-foreground mb-4">2024 - Présent</p>
+                <p className="text-muted-foreground mb-4">2024 </p>
                 <ul className="list-disc list-inside space-y-2">
                   <li>
                     Réalisation d&apos;une application iOS et Android pour le
@@ -159,6 +221,36 @@ export default function Home() {
                   </li>
                   <li>Méthodologie Agile</li>
                 </ul>
+              </div>
+              <div className="space-y-12">
+                <div className="bg-card p-8 rounded-lg shadow-lg">
+                  <h3 className="text-2xl font-semibold mb-4">
+                    Projet O&apos;Survivors
+                  </h3>
+                  <p className="text-muted-foreground mb-4">2023 - 2024</p>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>
+                      Développement d&apos;une application web collaborative
+                      dans un univers de survie, du concept au déploiement
+                      d&apos;un MVP
+                    </li>
+                    <li>
+                      Technologies: React, Redux, Node.js, Express.js, SCSS,
+                      Phaser 3
+                    </li>
+                    <li>Méthodologie Agile</li>
+                    <li>
+                      <a
+                        href="https://osurvivors.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 hover:underline"
+                      >
+                        Voir le projet en ligne
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div className="bg-card p-8 rounded-lg shadow-lg">
@@ -178,26 +270,27 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-background">
+      <section id="projects" className="py-20 bg-background ">
         <div className="container mx-auto px-6">
           <motion.div
             ref={ref}
             initial="hidden"
             animate={controls}
             variants={fadeIn}
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
           >
             <h2 className="text-4xl font-bold mb-12">Projets</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 ">
               {/* O'Survivors Project */}
               <motion.div
                 whileHover={{ y: -5 }}
                 className="bg-card rounded-lg overflow-hidden shadow-lg"
               >
                 <div
-                  className="h-48 bg-cover bg-center"
+                  className="h-48 bg-cover bg-start"
                   style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')",
+                    backgroundImage: "url('/OSurvivors.png')",
                   }}
                 />
                 <div className="p-6">
@@ -239,8 +332,6 @@ export default function Home() {
                   </a>
                 </div>
               </motion.div>
-
-              {/* Yuli & Friends Project */}
               <motion.div
                 whileHover={{ y: -5 }}
                 className="bg-card rounded-lg overflow-hidden shadow-lg"
@@ -248,8 +339,52 @@ export default function Home() {
                 <div
                   className="h-48 bg-cover bg-center"
                   style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')",
+                    backgroundImage: "url('/CosmoDecouverte.png')",
+                  }}
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold mb-3">
+                    Cosmo Découverte
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Plateforme interactive sur l&apos;exploration spatiale,
+                    développée avec des technologies modernes pour une
+                    expérience utilisateur immersive.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      ShadCN
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      Next.js
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      React
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      Tailwind CSS
+                    </span>
+                  </div>
+                  <a
+                    href="https://cosmo-decouverte.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
+                  >
+                    Voir le projet <Code2 className="ml-2 w-4 h-4" />
+                  </a>
+                </div>
+              </motion.div>
+
+              {/* Yuli & Friends Project */}
+              <motion.div
+                whileHover={{ y: -5 }}
+                className="bg-card rounded-lg overflow-hidden shadow-lg"
+              >
+                <div
+                  className="h-48 bg-cover bg-start"
+                  style={{
+                    backgroundImage: "url('/yuli.png')",
                   }}
                 />
                 <div className="p-6">
@@ -278,9 +413,57 @@ export default function Home() {
                       TypeScript
                     </span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    Sortie prévue pour Mars 2025
+                  <a
+                    href="https://www.yulisolutions.fr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
+                  >
+                    Voir le projet <Code2 className="ml-2 w-4 h-4" />
+                  </a>
+                </div>
+              </motion.div>
+              <motion.div
+                whileHover={{ y: -5 }}
+                className="bg-card rounded-lg overflow-hidden shadow-lg"
+              >
+                <div
+                  className="h-48 bg-cover bg-start"
+                  style={{
+                    backgroundImage: "url('/GuideAnimation.png')",
+                  }}
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold mb-3">
+                    Guide Animation
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Plateforme dédiée aux animations interactives, développée
+                    avec une intégration fluide de designs modernes et
+                    transitions dynamiques.
                   </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      Next.js
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      React
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      ShadCN
+                    </span>
+                    <span className="px-3 py-1 bg-secondary rounded-full text-sm">
+                      Framer Motion
+                    </span>
+                  </div>
+                  <a
+                    href="https://guide-animation.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
+                  >
+                    Voir le projet <Code2 className="ml-2 w-4 h-4" />
+                  </a>
                 </div>
               </motion.div>
             </div>
@@ -296,6 +479,8 @@ export default function Home() {
             initial="hidden"
             animate={controls}
             variants={fadeIn}
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
           >
             <h2 className="text-4xl font-bold mb-12">Compétences</h2>
             <div className="grid md:grid-cols-2 gap-12">
@@ -384,7 +569,7 @@ export default function Home() {
                 <Mail className="w-8 h-8" />
               </a>
               <a
-                href="#"
+                href="https://jonathan-bensadoun.netlify.app/"
                 className="text-foreground hover:text-primary transition-colors"
               >
                 <Code2 className="w-8 h-8" />
