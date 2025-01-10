@@ -40,8 +40,15 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-center md:justify-between">
-        <div className="text-white font-bold text-2xl">JB</div>
+        <div className="font-bold text-2xl">JB</div>
         <div className="hidden md:flex space-x-8 ">
+          <Link
+            href="#why-fastory"
+            onClick={(e) => handleAnchorClick(e, "why-fastory")}
+            className=" hover:text-primary transition-colors"
+          >
+            Fastory
+          </Link>
           <Link
             href="#about"
             onClick={(e) => handleAnchorClick(e, "about")}

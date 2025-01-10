@@ -76,13 +76,27 @@ export default function Home() {
               <div className="flex space-x-4">
                 <Link
                   href="#contact"
-                  className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors "
+                  className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+                  scroll={false}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .querySelector("#contact")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
                 >
                   Me contacter
                 </Link>
                 <Link
                   href="#experience"
                   className="border border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition-colors"
+                  scroll={false}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .querySelector("#experience")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
                 >
                   Mon parcours
                 </Link>
@@ -517,6 +531,7 @@ export default function Home() {
                       <li>Travail en équipe</li>
                       <li>Sens de l&apos;écoute</li>
                       <li>Gestion du stress</li>
+                      <li>Adaptabilité</li>
                     </ul>
                   </div>
                   <div className="bg-card p-4 rounded-lg">
