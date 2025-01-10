@@ -28,6 +28,16 @@ export default function Home() {
       transition: { duration: 0.6 },
     },
   };
+  useEffect(() => {
+    console.log(`
+     ##### #    #####    #        ###    #######    ####     ####      ##   ##
+      ##  #     #       # #      #   #      #      #    #   #    #       ###
+      #  #      ###    #   #      #         #      #    #   #####         #
+        #       #     #######    #   #      #      #    #   #     #       #
+                #    #       #    ###       #       ####    #      #      #
+                
+    `);
+  }, []);
 
   return (
     <main className="min-h-screen ">
@@ -681,6 +691,19 @@ export default function Home() {
             <p className="text-lg">
               N&apos;hésitez pas à me contacter pour discuter de vos projets ou
               opportunités de collaboration.
+            </p>
+            <p>
+              <span className="text-lg">Email: </span>
+              <a
+                href="mailto:jonathan.ben-sadoun@oclock.school"
+                className="text-primary hover:underline"
+              >
+                jonathan.ben-sadoun@oclock.school
+              </a>
+            </p>
+            <p>
+              <span className="text-lg">Téléphone: </span>
+              <span className="text-primary">06 20 93 24 03</span>
             </p>
           </motion.div>
         </div>

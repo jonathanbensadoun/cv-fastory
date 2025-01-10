@@ -22,6 +22,15 @@ export const metadata: Metadata = {
   },
 };
 
+console.log(`
+     _____
+   /      \\
+  |  () ()  |
+   \\  ^  /
+    |||||
+    |||||
+  `);
+
 export default function RootLayout({
   children,
 }: {
