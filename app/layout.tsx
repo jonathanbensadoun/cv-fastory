@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "CV Jonathan Bensadoun Fastory",
   description: "CV Jonathan Bensadoun a destination de Fastory",
+  metadataBase: new URL("https://jonathan-bensadoun-fastory.netlify.app/"),
   icons: {
     icon: "/favicon.ico",
   },
@@ -21,15 +22,6 @@ export const metadata: Metadata = {
     ],
   },
 };
-
-console.log(`
-     _____
-   /      \\
-  |  () ()  |
-   \\  ^  /
-    |||||
-    |||||
-  `);
 
 export default function RootLayout({
   children,

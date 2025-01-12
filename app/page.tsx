@@ -64,26 +64,26 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative  z-10 h-[calc(100vh-280px)] flex items-center justify-end">
+        <div className="relative  z-10 h-[calc(100vh-150px)] flex items-center justify-end">
           <div className="ml-auto mr-auto md:mr-40 px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="max-w-3xl"
+              className="max-w-3xl "
             >
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+              <h1 className="text-5xl md:text-7xl font-bold text-white text-center md:text-start mb-6">
                 Jonathan Bensadoun
               </h1>
-              <h2 className="text-2xl md:text-3xl text-white/90 mb-8">
+              <h2 className="text-2xl md:text-3xl text-center md:text-start text-white/90 mb-8">
                 Développeur Full Stack
               </h2>
-              <p className="text-lg text-white/80 mb-8 max-w-2xl">
+              <p className="text-lg text-white/80 mb-8 max-w-2xl text-center md:text-justify">
                 Passionné par le développement web avec une expertise dans
                 l&apos;écosystème JavaScript. Je crée des solutions innovantes
                 et performantes.
               </p>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 text-center justify-center md:justify-start">
                 <Link
                   href="#contact"
                   className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
@@ -127,10 +127,10 @@ export default function Home() {
             viewport={{ once: true, amount: 0.1 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-bold mb-8">
+            <h2 className="text-4xl font-bold mb-8 text-center md:text-left">
               Pourquoi je serais un atout pour Fastory ?
             </h2>
-            <p className="text-lg mb-6">
+            <p className="text-lg mb-6 text-justify">
               Fastory incarne l&apos;innovation, la créativité et
               l&apos;engagement, des valeurs qui résonnent parfaitement avec ma
               vision du développement web. Grâce à mon expertise dans des
@@ -139,7 +139,7 @@ export default function Home() {
               plateforme Fanzone et à contribuer à créer des expériences
               captivantes pour les utilisateurs.
             </p>
-            <p className="text-lg mb-6">
+            <p className="text-lg mb-6 text-justify ">
               Lors de mon projet de fin de formation, j&apos;ai eu
               l&apos;occasion d&apos;utiliser Phaser pour développer un jeu
               interactif, ce qui m&apos;a permis de comprendre les défis et les
@@ -149,7 +149,7 @@ export default function Home() {
               l&apos;utilisation d&apos;outils modernes tels que ShadCN,
               TailwindCSS, et PostgreSQL.
             </p>
-            <p className="text-lg mb-6">
+            <p className="text-lg mb-6 text-justify">
               Ce qui me distingue, c&apos;est ma passion pour l&apos;innovation
               et ma capacité à m&apos;adapter rapidement à de nouvelles
               technologies comme celles utilisées pour vos jeux Nextgen, tels
@@ -157,7 +157,7 @@ export default function Home() {
               ambitieuses en solutions concrètes, tout en apportant une énergie
               positive et une approche collaborative au sein d&apos;une équipe.
             </p>
-            <p className="text-lg">
+            <p className="text-lg text-justify">
               Rejoindre Fastory serait une opportunité de mettre mes compétences
               et ma créativité au service d&apos;un projet à fort impact, tout
               en continuant à grandir professionnellement dans un environnement
@@ -181,10 +181,12 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-            <h2 className="text-4xl font-bold mb-8">À propos</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center md:text-left">
+              À propos
+            </h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <p className="text-lg mb-6">
+                <p className="text-lg mb-6 text-justify">
                   Développeur fullstack passionné, avec une expertise affirmée
                   dans l&apos;écosystème JavaScript et une forte appétence pour
                   le front-end. Je suis constamment à l&apos;affût des dernières
@@ -233,10 +235,12 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-            <h2 className="text-4xl font-bold mb-12">Expérience</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center md:text-left">
+              Expérience
+            </h2>
             <div className="space-y-12">
               <div className="bg-card p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl font-semibold mb-4 ">
                   Développeur Web | Yuli & Friends
                 </h3>
                 <p className="text-muted-foreground mb-4">2024 </p>
@@ -284,7 +288,7 @@ export default function Home() {
               </div>
 
               <div className="bg-card p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl font-semibold mb-4 ">
                   Responsable adjoint | Relay Lagardère
                 </h3>
                 <p className="text-muted-foreground mb-4">2016 - 2023</p>
@@ -310,7 +314,9 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-            <h2 className="text-4xl font-bold mb-12">Projets</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center md:text-left">
+              Projets
+            </h2>
             <div className="grid md:grid-cols-2 gap-8 ">
               {/* O'Survivors Project */}
               <motion.div
@@ -594,7 +600,9 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-            <h2 className="text-4xl font-bold mb-12">Compétences</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center md:text-left">
+              Compétences
+            </h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <h3 className="text-2xl font-semibold mb-6">Technologies</h3>
@@ -657,7 +665,7 @@ export default function Home() {
             variants={fadeIn}
             className="text-center"
           >
-            <h2 className="text-4xl font-bold mb-8">Me contacter</h2>
+            <h2 className="text-4xl font-bold mb-8 ">Me contacter</h2>
             <div className="flex justify-center space-x-6 mb-8">
               <a
                 href="https://linkedin.com/in/jonathan-bensadoun"
