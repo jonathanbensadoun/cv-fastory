@@ -324,7 +324,7 @@ export default function Home() {
                 className="bg-card rounded-lg overflow-hidden shadow-lg"
               >
                 <div
-                  className="h-48 bg-cover bg-start"
+                  className="h-48 bg-cover bg-center md:bg-start"
                   style={{
                     backgroundImage: "url('/OSurvivors.png')",
                   }}
@@ -418,7 +418,7 @@ export default function Home() {
                 className="bg-card rounded-lg overflow-hidden shadow-lg"
               >
                 <div
-                  className="h-48 bg-cover bg-start"
+                  className="h-48 bg-cover bg-center md:bg-start"
                   style={{
                     backgroundImage: "url('/yuli.png')",
                   }}
@@ -464,7 +464,7 @@ export default function Home() {
                 className="bg-card rounded-lg overflow-hidden shadow-lg"
               >
                 <div
-                  className="h-48 bg-cover bg-start"
+                  className="h-48 bg-cover bg-center md:bg-start"
                   style={{
                     backgroundImage: "url('/GuideAnimation.png')",
                   }}
@@ -546,7 +546,7 @@ export default function Home() {
                 className="bg-card rounded-lg overflow-hidden shadow-lg"
               >
                 <div
-                  className="h-48 bg-cover bg-start"
+                  className="h-48 bg-cover bg-center md:bg-start"
                   style={{
                     backgroundImage: "url('/PortfolioPreview.png')",
                   }}
