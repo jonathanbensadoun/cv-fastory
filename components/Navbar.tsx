@@ -48,11 +48,11 @@ const Navbar: React.FC = () => {
         </Link>
         <div className="hidden md:flex space-x-8 ">
           <Link
-            href="#why-fastory"
-            onClick={(e) => handleAnchorClick(e, "why-fastory")}
+            href="#why-in-the-memory"
+            onClick={(e) => handleAnchorClick(e, "why-in-the-memory")}
             className=" hover:text-primary transition-colors"
           >
-            Fastory
+            In The Memory
           </Link>
           <Link
             href="#about"

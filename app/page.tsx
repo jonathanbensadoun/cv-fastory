@@ -115,8 +115,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* Why I Would Be an Asset for Fastory Section */}
-      <section id="why-fastory" className="py-20 bg-muted">
+
+      <section id="why-in-the-memory" className="py-20 bg-muted">
         <div className="container mx-auto px-6">
           <motion.div
             ref={ref}
@@ -128,44 +128,47 @@ export default function Home() {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-4xl font-bold mb-8 text-center md:text-left">
-              Pourquoi je serais un atout pour Fastory ?
+              Pourquoi je serais un atout pour In The Memory ?
             </h2>
             <p className="text-lg mb-6 text-justify">
-              Fastory incarne l&apos;innovation, la créativité et
-              l&apos;engagement, des valeurs qui résonnent parfaitement avec ma
-              vision du développement web. Grâce à mon expertise dans des
-              technologies comme React, Redux, Next.js, TypeScript, et Node.js,
-              je suis prêt à relever les défis techniques ambitieux de votre
-              plateforme Fanzone et à contribuer à créer des expériences
-              captivantes pour les utilisateurs.
-            </p>
-            <p className="text-lg mb-6 text-justify ">
-              Lors de mon projet de fin de formation, j&apos;ai eu
-              l&apos;occasion d&apos;utiliser Phaser pour développer un jeu
-              interactif, ce qui m&apos;a permis de comprendre les défis et les
-              opportunités liés au développement de mécaniques de jeu
-              immersives. Mon expérience dans le développement
-              d&apos;applications performantes et scalables inclut également
-              l&apos;utilisation d&apos;outils modernes tels que ShadCN,
-              TailwindCSS, et PostgreSQL.
+              In The Memory incarne l&apos;excellence technique,
+              l&apos;innovation et la collaboration, des valeurs qui résonnent
+              profondément avec ma vision du développement logiciel. Avec mon
+              expertise dans des technologies modernes telles que React,
+              Node.js, TypeScript, et PostgreSQL, je suis prêt à contribuer au
+              développement de votre plateforme SaaS et à relever les défis
+              complexes liés à l&apos;analyse de données pour le secteur du
+              retail.
             </p>
             <p className="text-lg mb-6 text-justify">
-              Ce qui me distingue, c&apos;est ma passion pour l&apos;innovation
-              et ma capacité à m&apos;adapter rapidement à de nouvelles
-              technologies comme celles utilisées pour vos jeux Nextgen, tels
-              que PixiJS ou Unity. Mon objectif est de transformer des idées
-              ambitieuses en solutions concrètes, tout en apportant une énergie
-              positive et une approche collaborative au sein d&apos;une équipe.
+              Lors de mon projet de fin de formation, j&apos;ai travaillé en
+              équipe sur la conception et le déploiement d&apos;une application
+              web complète en méthodologie agile. Cela m&apos;a permis de
+              renforcer mes compétences en backend avec Node.js et Express, tout
+              en maîtrisant les enjeux liés au frontend avec React et Redux. Mon
+              expérience m&apos;a également conduit à utiliser des outils tels
+              que TailwindCSS et React Native, des compétences directement
+              applicables à vos besoins.
+            </p>
+            <p className="text-lg mb-6 text-justify">
+              Ce qui me distingue, c&apos;est ma curiosité constante et ma
+              capacité à apprendre rapidement de nouvelles technologies. Je suis
+              motivé par l&apos;idée de contribuer à votre mission de
+              transformation du secteur du retail grâce à des solutions de
+              données innovantes. Je suis également convaincu que ma proactivité
+              et mon esprit collaboratif s&apos;intégreront parfaitement à votre
+              équipe d&apos;experts techniques.
             </p>
             <p className="text-lg text-justify">
-              Rejoindre Fastory serait une opportunité de mettre mes compétences
-              et ma créativité au service d&apos;un projet à fort impact, tout
-              en continuant à grandir professionnellement dans un environnement
-              stimulant et orienté vers l&apos;avenir.
+              Rejoindre In The Memory serait une opportunité unique de mettre
+              mes compétences au service d&apos;un projet à fort impact, tout en
+              continuant à grandir professionnellement dans un environnement
+              stimulant et orienté vers l&apos;innovation.
             </p>
           </motion.div>
         </div>
       </section>
+
       {/* About Section */}
       <section
         id="about"

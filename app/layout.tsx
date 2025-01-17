@@ -5,16 +5,16 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CV Jonathan Bensadoun Fastory",
-  description: "CV Jonathan Bensadoun a destination de Fastory",
-  metadataBase: new URL("https://jonathan-bensadoun-fastory.netlify.app/"),
+  title: "CV Jonathan Bensadoun In The Memory",
+  description: "CV Jonathan Bensadoun a destination de In The Memory",
+  metadataBase: new URL("https://jonathan-bensadoun-in-the-memory.netlify.app"),
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
     images: [
       {
-        url: "https://jonathan-bensadoun-fastory.netlify.app/bg_avatar.jpeg",
+        url: "https://jonathan-bensadoun-in-the-memory.netlify.app/bg_avatar.jpeg",
         width: 800,
         height: 600,
         alt: "Jonathan Bensadoun Avatar",
